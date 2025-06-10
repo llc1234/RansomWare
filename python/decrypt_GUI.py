@@ -104,7 +104,18 @@ def GetNumberOffFiles():
 def GUI():
     root = tkinter.Tk()
     root.title("Decryptor")
-    root.geometry("350x110")
+
+    window_width = 350
+    window_height = 110
+    
+    # Center window on screen
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    x = (screen_width // 2) - (window_width // 2)
+    y = (screen_height // 2) - (window_height // 2)
+    root.geometry(f'{window_width}x{window_height}+{x}+{y}')
+
+    # root.geometry("350x110")
 
     numbers_of_files = GetNumberOffFiles()
 
