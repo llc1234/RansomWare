@@ -52,7 +52,7 @@ def encrypt_file(password, file_path):
     salt = get_random_bytes(16)
     iv = get_random_bytes(16)
     
-    key = PBKDF2(password, salt, dkLen=32, count=1000000)
+    key = PBKDF2(password, salt, dkLen=32, count=10)
     
     with open(file_path, 'rb') as f:
         plaintext = f.read()
