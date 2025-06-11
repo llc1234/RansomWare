@@ -35,7 +35,7 @@ def decrypt_file(password, file_path):
     iv = encrypted_data[16:32]
     ciphertext = encrypted_data[32:]
     
-    key = PBKDF2(password, salt, dkLen=32, count=1000000)
+    key = PBKDF2(password, salt, dkLen=32, count=10)
     
     cipher = AES.new(key, AES.MODE_CBC, iv)
     plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
