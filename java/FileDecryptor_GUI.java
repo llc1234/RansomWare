@@ -163,7 +163,7 @@ public class FileDecryptor_GUI {
         System.arraycopy(data, 32, ciphertext, 0, ciphertext.length);
 
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-        KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 1000000, 256);
+        KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 10, 256); // 10 hash loops
         SecretKeySpec secretKey = new SecretKeySpec(factory.generateSecret(spec).getEncoded(), "AES");
 
         Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
