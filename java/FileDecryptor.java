@@ -62,7 +62,7 @@ public class FileDecryptor {
         byte[] ciphertext = Arrays.copyOfRange(encryptedData, 32, encryptedData.length);
 
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-        KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 1_000_000, 256);
+        KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 10, 256); // 10 hash loop
         SecretKey tmp = factory.generateSecret(spec);
         SecretKeySpec key = new SecretKeySpec(tmp.getEncoded(), "AES");
 
