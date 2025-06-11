@@ -16,6 +16,7 @@ TargetFiles = [
     '.xls',
     '.ppt',
     '.doc',
+    '.docx',
     '.accd',
     '.rtf',
     '.txt',
