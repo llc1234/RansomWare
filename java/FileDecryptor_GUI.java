@@ -16,8 +16,16 @@ public class FileDecryptor_GUI {
     private static final String PASSWORD = "password123";
     private static final String EXTENSION = ".RWM";
     private static final List<String> FOLDERS = List.of(
-            "Documents", "Downloads", "Favorites", "Links", "Music",
-            "Pictures", "Saved Games", "Videos", "OneDrive", "Desktop"
+        "Documents",
+        "Downloads",
+        "Favorites",
+        "Links",
+        "Music",
+        "Pictures",
+        "Saved Games",
+        "Videos",
+        "OneDrive",
+        "Desktop"
     );
 
     public static void main(String[] args) {
