@@ -1,0 +1,2 @@
+g++ -std=c++17 -o encrypt encrypt.cpp -lcrypto -lssl
+g++ -std=c++17 -o decrypt decrypt.cpp -lcrypto -lssl
