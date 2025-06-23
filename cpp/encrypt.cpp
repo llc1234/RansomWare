@@ -19,11 +19,17 @@ namespace fs = std::filesystem;
 // Target file extensions (case-insensitive)
 const std::set<std::string> TargetExtensions = {
     ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".rtf", ".txt", ".odt", ".ods", ".odp", ".tex", ".log", ".csv", ".accd", ".accdb",
+
     ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".psd", ".ai", ".svg", ".raw", ".cr2", ".nef",
+
     ".mp3", ".wav", ".flac", ".midi", ".ogg",
+
     ".avi", ".mov", ".mp4", ".mpeg", ".mpeg2", ".mpeg3", ".mpg", ".mkv", ".flv", ".3gp", ".m4v", ".wmv",
+
     ".zip", ".rar", ".7z", ".tar", ".gz", ".bak", ".backup", ".wbcat",
+
     ".py", ".html", ".htm", ".php", ".js", ".css", ".cpp", ".c", ".java", ".cs", ".vb", ".asp", ".aspx", ".cgi", ".pl",
+
     ".sql", ".db", ".dbf", ".mdb", ".accdb", ".accd"
 };
 
