@@ -4,6 +4,7 @@ g++ -std=c++17 -o decrypt decrypt.cpp -lcrypto -lssl
 g++ -std=c++17 -o encryptRSA encryptRSA.cpp -lcrypto -lssl
 g++ -std=c++17 -o decryptRSA decryptRSA.cpp -lcrypto -lssl
 
-# make the private and public in (private.pem, public.pem)
+// make the private and public in (private.pem, public.pem)
+
 openssl genrsa -out private.pem 2048
 openssl rsa -in private.pem -pubout -out public.pem
